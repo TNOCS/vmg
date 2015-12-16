@@ -36,7 +36,7 @@
         "cesium_url": "http://localhost:3003/vmg_mali_kidal/",
         "cesium_maptype": "openstreetmap",
         "attribution": "TNO Modelling, Simulation &amp; Gaming",
-        "preview": "http://images/TNOblack.png"
+        "preview": "http://localhost:3003/images/TNOblack.png"
     }, {
         "title": "Positron",
         "isDefault": false,

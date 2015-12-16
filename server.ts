@@ -19,6 +19,4 @@ cs.start(() => {
         sources: path.join(__dirname, 'tilesources')
     });
     console.log('started');
-        //    //{ key: "imb", s: new ImbAPI.ImbAPI("app-usdebug01.tsn.tno.nl", 4000),options: {} }
-        //    var ml = new MobileLayer.MobileLayer(api, "mobilelayer", "/api/resources/SGBO", server, messageBus, cm);
 });
