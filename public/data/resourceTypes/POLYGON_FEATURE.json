@@ -7,7 +7,7 @@
                 "iconUri":             "images/house.png",
                 "iconWidth":           24,
                 "iconHeight":          24,
-                "stroke":              false,
+                "stroke":              true,
                 "strokeWidth":         1,
                 "strokeColor":         "#000000",
                 "selectedStrokeColor": "#0000FF",
@@ -25,7 +25,7 @@
                 "iconUri":             "images/wall.png",
                 "iconWidth":           24,
                 "iconHeight":          24,
-                "stroke":              false,
+                "stroke":              true,
                 "strokeWidth":         1,
                 "strokeColor":         "#000000",
                 "selectedStrokeColor": "#0000FF",
@@ -51,15 +51,15 @@
             "visibleInCallOut": true
         },
         "extrude": {
-            "title": "Gebouwhoogte [m]",
+            "title": "Gebouwhoogte",
             "type": "number",
-            "stringFormat": "{0:0.00}",
+            "stringFormat": "{0:0.00} [m]",
             "visibleInCallOut": true
         },
         "height": {
-            "title": "Hoogte [m]",
+            "title": "Hoogte",
             "type": "number",
-            "stringFormat": "{0:0.00}",
+            "stringFormat": "{0:0.00} [m]",
             "visibleInCallOut": true
         },
         "style": {
