@@ -4,8 +4,11 @@ node_modules/
 
 public/bower_components/
 public/data/templates/
+public/data/projects/vmg/vmg_mali*
+
 public/**/*.js
 public/**/*.js.map
+
 
 .vscode
 
