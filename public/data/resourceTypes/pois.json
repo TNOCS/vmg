@@ -1,0 +1,37 @@
+{
+    "featureTypes": {
+        "poi": {
+            "name": "POI",
+            "style": {
+                "iconUri": "images/poi/{CATEGORY}.png",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "stroke": true,
+                "strokeWidth": 1,
+                "strokeColor": "#000000",
+                "selectedStrokeColor": "#0000FF",
+                "fillColor": "#FFFFFF",
+                "opacity": 1,
+                "fillOpacity": 1,
+                "nameLabel": "NAME"
+            },
+            "propertyTypeKeys": "CATEGORY;NAME;"
+        }
+    },
+    "propertyTypeData": {
+        "NAME": {
+            "label": "NAME",
+            "title": "Naam",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "CATEGORY": {
+            "label": "CATEGORY",
+            "title": "Category",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        }
+    }
+}

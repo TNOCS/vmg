@@ -1,0 +1,125 @@
+{
+    "featureTypes" : {
+        "healthfacility" : {
+            "name" : "healthfacility",
+            "style" : {
+                "iconUri" : "images/osm/clinic.png",
+                "iconWidth" : 24,
+                "iconHeight" : 24,
+                "stroke" : true,
+                "strokeWidth" : 1,
+                "strokeColor" : "#000000",
+                "selectedStrokeColor" : "#0000FF",
+                "fillColor" : "#FF8800",
+                "opacity" : 1,
+                "fillOpacity" : 1,
+                "nameLabel" : "STRUCTURE"
+            },
+            "propertyTypeKeys" : "PCode;REGION;DISTRICT;Code_CSREF;STRUCTURE;PCODE2;TYPE;DATE OUVERTURE;NBRE VILLAGE;DISTANCE;ACCESSIBILITE;Source;obs;Longitude;Latitude;"
+        }
+    },
+    "propertyTypeData" : {
+        "PCode" : {
+            "label" : "PCode",
+            "title" : "PCode",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "REGION" : {
+            "label" : "REGION",
+            "title" : "Region",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "DISTRICT" : {
+            "label" : "DISTRICT",
+            "title" : "District",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "Code_CSREF" : {
+            "label" : "Code_CSREF",
+            "title" : "Code_CSREF",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "STRUCTURE" : {
+            "label" : "STRUCTURE",
+            "title" : "Structure",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "PCODE2" : {
+            "label" : "PCODE2",
+            "title" : "PCode2",
+            "type" : "number",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "TYPE" : {
+            "label" : "TYPE",
+            "title" : "Type",
+            "type" : "number",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "DATE OUVERTURE" : {
+            "label" : "DATE OUVERTURE",
+            "title" : "Opening date",
+            "type" : "date",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "NBRE VILLAGE" : {
+            "label" : "NBRE VILLAGE",
+            "title" : "Village number",
+            "type" : "number",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "DISTANCE" : {
+            "label" : "DISTANCE",
+            "title" : "Distance",
+            "type" : "number",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "ACCESSIBILITE" : {
+            "label" : "ACCESSIBILITE",
+            "title" : "Accessibility",
+            "type" : "text",
+            "visibleInCallOut" : true
+        },
+        "Source" : {
+            "label" : "Source",
+            "title" : "Source",
+            "type" : "text",
+            "visibleInCallOut" : true
+        },
+        "obs" : {
+            "label" : "obs",
+            "title" : "obs",
+            "type" : "text",
+            "visibleInCallOut" : true
+        },
+        "Longitude" : {
+            "label" : "Longitude",
+            "title" : "Longitude",
+            "type" : "number",
+            "visibleInCallOut" : false
+        },
+        "Latitude" : {
+            "label" : "Latitude",
+            "title" : "Latitude",
+            "type" : "number",
+            "visibleInCallOut" : false
+        }
+    },
+    "id" : "healthfac",
+    "propertyTypes" : {}
+}
