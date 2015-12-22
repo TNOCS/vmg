@@ -27,6 +27,7 @@
             "opacity": 75,
             "type": "geojson",
             "storage": "file",
+            "timeAware": false,
             "url": "/data/projects/VMG/vmg_mali_M_wall_areals_cesium_wgs84.geojson",
             "isDynamic": false
         }, {
@@ -41,6 +42,7 @@
             "opacity": 75,
             "type": "geojson",
             "storage": "file",
+            "timeAware": false,
             "url": "/data/projects/VMG/vmg_mali_M_building_areals_cesium_wgs84.geojson",
             "isDynamic": false
         }, {
@@ -55,6 +57,7 @@
             "opacity": 75,
             "type": "geojson",
             "storage": "file",
+            "timeAware": false,
             "url": "/data/projects/VMG/vmg_mali_M_trees_point_cesium_wgs84.geojson",
             "isDynamic": false
         }]
