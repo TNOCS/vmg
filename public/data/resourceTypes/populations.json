@@ -1,0 +1,72 @@
+{
+    "featureTypes": {
+        "Population": {
+            "name": "Population",
+            "style": {
+                "iconUri": "images/Wijk.png",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "stroke": true,
+                "strokeWidth": 1,
+                "strokeColor": "#000000",
+                "selectedStrokeColor": "#0000FF",
+                "fillColor": "#FFFFFF",
+                "opacity": 1,
+                "fillOpacity": 1,
+                "nameLabel": "featureNam"
+            },
+            "propertyTypeKeys": "CODE_INSTA;month;POP2013_F;CNTRY_NAME;REGION_NAM;CNTRY_CODE;POP2013_M;CNTRY_NA_1;Name;SOURCE;PCode;POINT_X;POINT_Y;TOTAL;PROJECTION;ADMIN1_PCO;PROJEECTIO;value;PCODE1;SHAPE_LENG;_id;TYPE"
+        }
+    },
+    "propertyTypeData": {
+        "Name": {
+            "label": "Name",
+            "title": "Name",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "POP2013_M": {
+            "label": "POP2013_M",
+            "title": "Nr. of men",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "POP2013_F": {
+            "label": "POP2013_F",
+            "title": "Nr. of women",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "TOTAL": {
+            "label": "TOTAL",
+            "title": "Inhabitants",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "TYPE": {
+            "label": "TYPE",
+            "title": "Type",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "PCODE1": {
+            "label": "PCODE1",
+            "title": "Pcode1",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "month": {
+            "label": "month",
+            "title": "Month",
+            "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": true
+        }
+    }
+}

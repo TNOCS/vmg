@@ -1,0 +1,45 @@
+{
+    "featureTypes" : {
+        "Road" : {
+            "name" : "Road",
+            "style" : {
+                "iconWidth" : 32,
+                "iconHeight" : 32,
+                "strokeWidth": 4,
+                "strokeColor": "#333333",
+                "opacity": 1,
+                "fillOpacity": 1,
+                "selectedStrokeColor":"#333355",
+                "iconUri" : "images/road.png",
+                "nameLabel" : "TYPE"
+            },
+            "propertyTypeKeys" : "TYPE;LANES;NAME;ONEWAY;"
+        }
+    },
+    "propertyTypeData" : {
+        "NAME" : {
+            "label" : "NAME",
+            "type" : "text",
+            "title" : "Name",
+            "visibileInCallOut": true
+        },
+        "TYPE" : {
+            "label" : "TYPE",
+            "type" : "text",
+            "title" : "Type",
+            "visibileInCallOut": true
+        },
+        "LANES" : {
+            "label" : "LANES",
+            "type" : "number",
+            "title" : "Lanes",
+            "visibileInCallOut": true
+        },
+        "ONEWAY" : {
+            "label" : "ONEWAY",
+            "type" : "text",
+            "title" : "ONEWAY",
+            "visibileInCallOut": true
+        }
+    }
+}

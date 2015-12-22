@@ -1,0 +1,102 @@
+{
+    "featureTypes" : {
+        "community" : {
+            "name" : "community",
+            "style" : {
+                "iconUri" : "images/wijk.png",
+                "iconWidth" : 24,
+                "iconHeight" : 24,
+                "stroke" : true,
+                "strokeWidth" : 1,
+                "strokeColor" : "#000000",
+                "selectedStrokeColor" : "#0000FF",
+                "fillColor" : "#FF8800",
+                "opacity" : 1,
+                "fillOpacity" : 1,
+                "nameLabel" : "COMMUNES"
+            },
+            "propertyTypeKeys" : "REGIONS;CERCLES;COMMUNES;Admin2_Pcode;Admin3_Pcode;Masculin;Feminin;Ensemble;CommuneCamel2;CommuneCamel;"
+        }
+    },
+    "propertyTypeData" : {
+        "REGIONS" : {
+            "label" : "REGIONS",
+            "title" : "Region",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "CERCLES" : {
+            "label" : "CERCLES",
+            "title" : "Cercle",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "COMMUNES" : {
+            "label" : "COMMUNES",
+            "title" : "Town",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "Admin2_Pcode" : {
+            "label" : "Admin2_Pcode",
+            "title" : "Admin2_Pcode",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "Admin3_Pcode" : {
+            "label" : "Admin3_Pcode",
+            "title" : "Admin3_Pcode",
+            "type" : "text",
+            "visibleInCallOut" : false,
+            "canEdit" : true
+        },
+        "Masculin" : {
+            "label" : "Masculin",
+            "title" : "Nr. of men",
+            "type" : "number",
+            "min" : 0,
+            "max" : 100000,
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "Feminin" : {
+            "label" : "Feminin",
+            "title" : "Nr. of women",
+            "min" : 0,
+            "max" : 100000,
+            "type" : "number",
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "Ensemble" : {
+            "label" : "Ensemble",
+            "title" : "Nr. of inhabitants",
+            "type" : "number",
+            "min" : 0,
+            "max" : 200000,
+            "visibleInCallOut" : true,
+            "canEdit" : true
+        },
+        "CommuneCamel2" : {
+            "label" : "CommuneCamel2",
+            "title" : "Name",
+            "type" : "text",
+            "visibleInCallOut" : false,
+            "canEdit" : true
+        },
+        "CommuneCamel" : {
+            "label" : "CommuneCamel",
+            "title" : "Name",
+            "type" : "text",
+            "visibleInCallOut" : false,
+            "canEdit" : true
+        }
+    },
+    "id" : "admin",
+    "propertyTypes" : {}
+
+}
