@@ -88,12 +88,12 @@ module App {
         private layerMessageReceived = (title: string, layer: csComp.Services.ProjectLayer): void => {
             switch (title) {
                 case 'loading':
-                    this.$scope.layersLoading += 1;
-                    console.log('Loading');
+                    this.$scope.layersLoading++;
+                    console.log(`Loading ${layer.title}...`);
                     break;
                 case 'activated':
-                    if (this.$scope.layersLoading >= 1) this.$scope.layersLoading -= 1;
-                    console.log('Activated');
+                    if (this.$scope.layersLoading >= 1) this.$scope.layersLoading--;
+                    console.log(`Activated ${layer.title}.`);
                     break;
                 case 'error':
                     this.$scope.layersLoading = 0;
