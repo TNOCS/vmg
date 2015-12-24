@@ -14,8 +14,10 @@
   },
   "license": "MIT",
   "dependencies": {
+    "calais-entity-extractor": "github:rinzeb/calais-entity-extractor",
     "csweb": "^0.2.15",
     "csweb-tile": "0.0.1",
+    "csweb-news": "github:rinzeb/csweb-news",
     "winston": "^2.1.0"
   },
   "devDependencies": {

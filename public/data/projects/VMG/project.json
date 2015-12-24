@@ -4,6 +4,7 @@
     "logo": "images/CommonSenseRound.png",
     "url": "/data/projects/VMG/project.json",
     "connected": true,
+    "eventTab": true,
     "timeLine": {
         "focus": 1450568925000,
         "start": 1450047600000,
@@ -231,6 +232,24 @@
                     "typeUrl": "data/resourceTypes/osmfeatures.json",
                     "defaultFeatureType": "osm",
                     "isDynamic": false
+                }
+            ]
+        }, 
+        {
+            "id": "a887c780-422f-44c4-e291-154813452b81",
+            "title": "News",
+            "clustering": true,
+            "clusterlevel": 20,
+            "layers": [
+                {
+                    "id": "newsfeed",
+                    "title": "News",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "url": "api/layers/newsfeed",
+                    "typeUrl": "data/resourceTypes/news.json",
+                    "defaultFeatureType": "news",
+                    "isDynamic": true
                 }
             ]
         }
