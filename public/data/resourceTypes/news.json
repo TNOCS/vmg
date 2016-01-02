@@ -1,0 +1,65 @@
+{
+    "featureTypes": {
+        "news": {
+            "name": "News",
+            "style": {
+                "iconUri": "images/news.png",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "stroke": true,
+                "strokeWidth": 1,
+                "strokeColor": "#000000",
+                "selectedStrokeColor": "#0000FF",
+                "fillColor": "#FFFFFF",
+                "opacity": 1,
+                "fillOpacity": 1,
+                "nameLabel": "Name"
+            },
+            "propertyTypeKeys": "Name;news_title;news_author;news_text;news_date;news_url;"
+        }
+    },
+    "propertyTypeData": {
+        "Name": {
+            "label": "Name",
+            "title": "Name",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "news_url": {
+            "label": "news_url",
+            "title": "Link",
+            "type": "bbcode",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "news_date": {
+            "label": "news_date",
+            "title": "Date",
+            "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "news_title": {
+            "label": "news_title",
+            "title": "Title",
+            "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "news_text": {
+            "label": "news_text",
+            "title": "Content",
+            "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "news_author": {
+            "label": "news_author",
+            "title": "Author",
+            "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": true
+        }
+    }
+}
