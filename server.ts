@@ -1,9 +1,9 @@
-import Winston = require('winston');
-import path = require('path');
-import fs = require('fs');
+import Winston    = require('winston');
+import path       = require('path');
+import fs         = require('fs');
 import tilesource = require('csweb-tile');
-import csWebNews = require('csweb-news');
-import chokidar = require('chokidar');
+import csWebNews  = require('csweb-news');
+import chokidar   = require('chokidar');
 import * as csweb from 'csweb';
 
 // Read the configuration file that should contain API-keys and keywords
@@ -30,7 +30,12 @@ var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
 
 cs.start(() => {
     var ts = new tilesource.TileSource(cs.server, <tilesource.TileSourceOptions>{
-        sources: path.join(__dirname, 'tilesources')
+        corrs: true,
+        tileSources: [{
+            protocol: 'mbtiles',
+            path: path.join(__dirname, 'tilesources/mbtiles/vmg_mali_kidal.mbtiles'),
+            fallbackUri: 'http://c.tile.openstreetmap.fr/hot'
+        }]
     });
 
     //Create newsfeed if the required parameters are in the configuration file

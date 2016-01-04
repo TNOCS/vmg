@@ -37,6 +37,8 @@
     "Scripts\\typings\\cs\\cs-offline-search.d.ts",
     "Scripts\\typings\\cs\\csComp.d.ts",
     "Scripts\\typings\\cs\\csweb-tile.d.ts",
+    "Scripts\\typings\\cs\\calais-entity-extractor.d.ts",
+    "Scripts\\typings\\cs\\csweb-news.d.ts",
     "Scripts\\typings\\d3\\d3.d.ts",
     "Scripts\\typings\\dc\\dc.d.ts",
     "Scripts\\typings\\express\\express.d.ts",
