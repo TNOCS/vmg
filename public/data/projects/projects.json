@@ -34,6 +34,7 @@
         "minZoom": 0,
         "maxZoom": 18,
         "cesium_url": "http://localhost:3003/vmg_mali_kidal/",
+        "cesium_tileUrl": "http://localhost:8000/tilesets/kidal-outer-dtm",
         "cesium_maptype": "openstreetmap",
         "attribution": "TNO Modelling, Simulation &amp; Gaming",
         "preview": "http://localhost:3003/images/TNOblack.png"
