@@ -4,5 +4,7 @@
     "bagConnectionString": "postgres://bag_user:bag4all@cool3.sensorlab.tno.nl:8039/bag",
     "resolveAddress": "/lookup_address/zip_number/:zip/:number",
     "keywords" : ["Mali", "Kidal", "Gao", "Bamako"],
+    "ignorewords" : ["cookies", "walmart"],
+    "ignoreurls" : ["opinion.inquirer.net", "financialexpress.com", "amazon.com"],
     "updateIntervalSeconds" : 3600
 }

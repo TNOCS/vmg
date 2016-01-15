@@ -50,32 +50,37 @@ cs.start(() => {
 
         // Init news feed
         var opts = { corrs: true,
-          newsFolder: newsFolder,
-          alchemyApi: config.alchemyFeedApiKey,
-          calaisApi: config.openCalaisApiKey,
-          keywords: config.keywords,
-          updateInterval: config.updateIntervalSeconds
+            newsFolder: newsFolder,
+            alchemyApi: config.alchemyFeedApiKey,
+            calaisApi: config.openCalaisApiKey,
+            keywords: config.keywords,
+            ignorewords: config.ignorewords,
+            searchurls: config.searchurls,
+            ignoreurls: config.ignoreurls,
+            updateInterval: config.updateIntervalSeconds
         };
         var ns = new csWebNews.NewsSource(cs.server, opts);
 
-        // Watch newsfolder for new items        
-        console.log('Watch newsfolder: ' + newsFolder);
-        var watcher = chokidar.watch(newsFolder, { ignoreInitial: false, ignored: /[\/\\]\./, persistent: true });
-        watcher.on('all', ((action, pathName) => {
-            if (action === 'add' || action === 'change') {
-                Winston.info('newsstore: new item found : ' + pathName);
-                parseFeature(pathName, (f) => {
-                    if (f) {
-                        cs.api.updateFeature(newsLayerId, f, {}, () => {});
-                    }
-                });
-            }
-            if (action === 'unlink') {
-                Winston.info('newsstore: removing item : ' + pathName);
-                var id = path.basename(pathName, 'json');
-                cs.api.deleteFeature(newsLayerId, id, {}, () => {});
-            }
-        }));
+        // Watch newsfolder for new items
+        setTimeout(() => {
+            console.log('Watch newsfolder: ' + newsFolder);
+            var watcher = chokidar.watch(newsFolder, { ignoreInitial: false, ignored: /[\/\\]\./, persistent: true });
+            watcher.on('all', ((action, pathName) => {
+                if (action === 'add' || action === 'change') {
+                    Winston.info('newsstore: new item found : ' + pathName);
+                    parseFeature(pathName, (f) => {
+                        if (f) {
+                            cs.api.updateFeature(newsLayerId, f, {}, () => {});
+                        }
+                    });
+                }
+                if (action === 'unlink') {
+                    Winston.info('newsstore: removing item : ' + pathName);
+                    var id = path.basename(pathName, 'json');
+                    cs.api.deleteFeature(newsLayerId, id, {}, () => {});
+                }
+            }));
+            }, 3000);
     }
     console.log('started');
 });

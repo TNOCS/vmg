@@ -23,7 +23,7 @@
     "calais-entity-extractor": "github:rinzeb/calais-entity-extractor",
     "csweb": "^0.2.15",
     "csweb-tile": "^0.0.2",
-    "csweb-news": "github:rinzeb/csweb-news",
+    "csweb-news": "^0.0.2",
     "winston": "^2.1.0"
   },
   "devDependencies": {

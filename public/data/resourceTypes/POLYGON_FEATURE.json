@@ -12,9 +12,10 @@
                 "strokeColor":         "#000000",
                 "selectedStrokeColor": "#0000FF",
                 "fillColor":           "#FF8800",
-                "opacity":             0.5,
-                "fillOpacity":         0.5,
+                "opacity":             1,
+                "fillOpacity":         1,
                 "heightProperty":      "extrude",
+                "heightAboveSeaProperty": "height",
                 "nameLabel": "extrude"
             },
             "propertyTypeKeys": "roof_type;bldg_type;extrude;height"
@@ -30,9 +31,10 @@
                 "strokeColor":         "#000000",
                 "selectedStrokeColor": "#0000FF",
                 "fillColor":           "#FF8800",
-                "opacity":             0.5,
-                "fillOpacity":         0.5,
+                "opacity":             1,
+                "fillOpacity":         1,
                 "heightProperty":      "extrude",
+                "heightAboveSeaProperty": "height",
                 "nameLabel":           "extrude"
             },
             "propertyTypeKeys": "extrude;style;height"

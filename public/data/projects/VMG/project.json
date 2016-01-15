@@ -7,11 +7,10 @@
     "eventTab": true,
     "timeLine": {
         "focus": 1450568925000,
-        "start": 1450047600000,
-        "end": 1450652400000,
         "range": 604800000,
         "zoomLevel": 3600000,
-        "zoomLevelName": "hours"
+        "zoomLevelName": "hours", 
+        "isLive": true
     },
     "mcas": [],
     "datasources": null,
@@ -25,7 +24,8 @@
             "showLegend": true,
             "showRightmenu": false,
             "showBackgroundImage": false,
-            "widgets": []
+            "widgets": [], 
+            "visiblelayers": ["newsfeed"]
         },
         {
             "id": "datatable",
@@ -71,7 +71,7 @@
             "dynamicResource": true,
             "defaultFeatureType": "wall",
             "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
-            "opacity": 75,
+            "opacity": 100,
             "type": "geojson",
             "storage": "file",
             "timeAware": false,
@@ -86,7 +86,7 @@
             "dynamicResource": true,
             "defaultFeatureType": "building",
             "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
-            "opacity": 75,
+            "opacity": 100,
             "type": "geojson",
             "storage": "file",
             "timeAware": false,
@@ -101,7 +101,7 @@
             "dynamicResource": true,
             "defaultFeatureType": "tree",
             "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
-            "opacity": 75,
+            "opacity": 100,
             "type": "geojson",
             "storage": "file",
             "timeAware": false,
@@ -245,6 +245,7 @@
             "clusterlevel": 20,
             "layers": [
                 {
+                    "reference": "newsfeed",
                     "id": "newsfeed",
                     "title": "News",
                     "type": "dynamicgeojson",
