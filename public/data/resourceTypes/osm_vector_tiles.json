@@ -1,0 +1,106 @@
+{
+    "featureTypes": {
+        "places": {
+            "name": "Plaatsen",
+            "style": {
+                "iconUri": "images/osm/pin.png",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "stroke": true,
+                "strokeWidth": 1,
+                "strokeColor": "#000000",
+                "selectedStrokeColor": "#0000FF",
+                "fillColor": "#FFFFFF",
+                "opacity": 1,
+                "fillOpacity": 1,
+                "nameLabel": "name"
+            },
+            "propertyTypeKeys": "name;admin_level;scalerank;labelrank;population;"
+        },
+        "pois": {
+            "name": "pois",
+            "style": {
+                "iconUri": "images/osm/{kind}.png",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "stroke": true,
+                "strokeWidth": 1,
+                "strokeColor": "#000000",
+                "selectedStrokeColor": "#0000FF",
+                "fillColor": "#FFFFFF",
+                "opacity": 1,
+                "fillOpacity": 1,
+                "nameLabel": "name"
+            },
+            "propertyTypeKeys": "name;kind"
+        },
+        "roads": {
+            "name": "Wegen",
+            "style": {
+                "iconUri": "images/osm/road.png",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "stroke": true,
+                "strokeWidth": 6,
+                "strokeColor": "#FFFF00",
+                "selectedStrokeColor": "#0000FF",
+                "fillColor": "#FFFFFF",
+                "opacity": 0.5,
+                "fillOpacity": 0.5,
+                "nameLabel": "kind"
+            },
+            "propertyTypeKeys": "name;kind;landuse_kind;highway;railway;is_bridge;is_tunnel;is_link"
+        }
+    },
+    "propertyTypeData": {
+        "name": {
+            "title": "Naam",
+            "type": "text"
+        },
+        "kind": {
+            "title": "Type",
+            "type": "text"
+        },
+        "landuse_kind": {
+            "title": "Gebruikstype",
+            "type": "text"
+        },
+        "highway": {
+            "title": "Snelweg",
+            "type": "text"
+        },
+        "railway": {
+            "title": "Spoor",
+            "type": "text"
+        },
+        "is_bridge": {
+            "title": "Is brug",
+            "type": "boolean"
+        },
+        "is_tunnel": {
+            "title": "Is tunnel",
+            "type": "boolean"
+        },
+        "is_link": {
+            "title": "Is verbinding",
+            "type": "boolean"
+        },
+        "admin_level": {
+             "title": "Administratieve grens",
+             "type": "text"   
+        },
+        "scalerank": {
+            "title": "Schaalpositie",
+            "type": "number"
+        },
+        "labelrank": {
+            "title": "Labelpositie",
+            "type": "number"
+        },
+        "population": {
+            "title": "Populatie",
+            "type": "number",
+            "stringFormat": "{0:0,0}"
+        }
+    }
+}

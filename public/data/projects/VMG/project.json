@@ -9,7 +9,7 @@
         "focus": 1450568925000,
         "range": 604800000,
         "zoomLevel": 3600000,
-        "zoomLevelName": "hours", 
+        "zoomLevelName": "hours",
         "isLive": true
     },
     "mcas": [],
@@ -24,8 +24,10 @@
             "showLegend": true,
             "showRightmenu": false,
             "showBackgroundImage": false,
-            "widgets": [], 
-            "visiblelayers": ["newsfeed"]
+            "widgets": [],
+            "visiblelayers": [
+                "newsfeed"
+            ]
         },
         {
             "id": "datatable",
@@ -56,58 +58,75 @@
     },
     "expertMode": 3,
     "propertyTypeData": {},
-    "groups": [{
-        "id": "Kidal",
-        "description": "Kidal, Mali",
-        "title": "Kidal",
-        "clusterLevel": 12,
-        "clustering": false,
-        "layers": [{
-            "id": "walls",
-            "title": "Muren",
-            "updated": 1446566859561,
-            "enabled": false,
-            "description": "TNO",
-            "dynamicResource": true,
-            "defaultFeatureType": "wall",
-            "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
-            "opacity": 100,
-            "type": "geojson",
-            "storage": "file",
-            "timeAware": false,
-            "url": "/data/projects/VMG/vmg_mali_M_wall_areals_cesium_wgs84.geojson",
-            "isDynamic": false
-        }, {
-            "id": "buildings",
-            "title": "Gebouwen",
-            "updated": 1446566859561,
-            "enabled": false,
-            "description": "TNO",
-            "dynamicResource": true,
-            "defaultFeatureType": "building",
-            "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
-            "opacity": 100,
-            "type": "geojson",
-            "storage": "file",
-            "timeAware": false,
-            "url": "/data/projects/VMG/vmg_mali_M_building_areals_cesium_wgs84.geojson",
-            "isDynamic": false
-        }, {
-            "id": "trees",
-            "title": "Bomen",
-            "updated": 1446566859561,
-            "enabled": false,
-            "description": "TNO",
-            "dynamicResource": true,
-            "defaultFeatureType": "tree",
-            "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
-            "opacity": 100,
-            "type": "geojson",
-            "storage": "file",
-            "timeAware": false,
-            "url": "/data/projects/VMG/vmg_mali_M_trees_point_cesium_wgs84.geojson",
-            "isDynamic": false
-        }]
+    "groups": [
+        {
+            "id": "Kidal",
+            "description": "Kidal, Mali",
+            "title": "Kidal",
+            "clusterLevel": 12,
+            "clustering": false,
+            "layers": [
+                {
+                    "id": "osm",
+                    "title": "Roads",
+                    "type": "vectortile",
+                    "renderType": "geojson",
+                    "url": "http://vector.mapzen.com/osm/roads,pois,places/{z}/{x}/{y}.topojson?api_key=vector-tiles-LTMkOX0",
+                    "typeUrl": "data/resourceTypes/osm_vector_tiles.json",
+                    "defaultFeatureType": "roads",
+                    "timeAware": false,
+                    "refreshBBOX": true,
+                    "isDynamic": false
+                },                
+                {
+                    "id": "walls",
+                    "title": "Muren",
+                    "updated": 1446566859561,
+                    "enabled": false,
+                    "description": "TNO",
+                    "dynamicResource": true,
+                    "defaultFeatureType": "wall",
+                    "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
+                    "opacity": 100,
+                    "type": "geojson",
+                    "storage": "file",
+                    "timeAware": false,
+                    "url": "/data/projects/VMG/vmg_mali_M_wall_areals_cesium_wgs84.geojson",
+                    "isDynamic": false
+                },
+                {
+                    "id": "buildings",
+                    "title": "Gebouwen",
+                    "updated": 1446566859561,
+                    "enabled": false,
+                    "description": "TNO",
+                    "dynamicResource": true,
+                    "defaultFeatureType": "building",
+                    "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
+                    "opacity": 100,
+                    "type": "geojson",
+                    "storage": "file",
+                    "timeAware": false,
+                    "url": "/data/projects/VMG/vmg_mali_M_building_areals_cesium_wgs84.geojson",
+                    "isDynamic": false
+                },
+                {
+                    "id": "trees",
+                    "title": "Bomen",
+                    "updated": 1446566859561,
+                    "enabled": false,
+                    "description": "TNO",
+                    "dynamicResource": true,
+                    "defaultFeatureType": "tree",
+                    "typeUrl": "data/resourceTypes/POLYGON_FEATURE.json",
+                    "opacity": 100,
+                    "type": "geojson",
+                    "storage": "file",
+                    "timeAware": false,
+                    "url": "/data/projects/VMG/vmg_mali_M_trees_point_cesium_wgs84.geojson",
+                    "isDynamic": false
+                }
+            ]
         },
         {
             "id": "21610780-422f-44c4-e291-154813452b81",
@@ -121,6 +140,7 @@
                     "url": "data/projects/VMG/airports.json",
                     "typeUrl": "data/resourceTypes/airports.json",
                     "defaultFeatureType": "airport",
+                    "timeAware": false,
                     "isDynamic": false
                 },
                 {
@@ -131,6 +151,7 @@
                     "url": "data/projects/VMG/mali_highway.shp_capped.json",
                     "typeUrl": "data/resourceTypes/roads.json",
                     "defaultFeatureType": "Road",
+                    "timeAware": false,
                     "isDynamic": false
                 },
                 {
@@ -143,6 +164,7 @@
                     "typeUrl": "data/resourceTypes/admin.json",
                     "opacity": 70,
                     "defaultFeatureType": "community",
+                    "timeAware": false,
                     "isDynamic": false,
                     "tags": []
                 }
@@ -162,6 +184,7 @@
                     "url": "data/projects/VMG/mali_poi.shp_capped.json",
                     "typeUrl": "data/resourceTypes/pois.json",
                     "defaultFeatureType": "poi",
+                    "timeAware": false,
                     "isDynamic": false
                 },
                 {
@@ -172,6 +195,7 @@
                     "url": "data/projects/VMG/mali_location.shp_capped.json",
                     "typeUrl": "data/resourceTypes/locations.json",
                     "defaultFeatureType": "Location",
+                    "timeAware": false,
                     "isDynamic": false
                 },
                 {
@@ -182,6 +206,7 @@
                     "url": "data/projects/VMG/region_capitals.json",
                     "typeUrl": "data/resourceTypes/populations.json",
                     "defaultFeatureType": "Population",
+                    "timeAware": false,
                     "isDynamic": false
                 },
                 {
@@ -195,6 +220,7 @@
                     "typeUrl": "data/resourceTypes/healthfac.json",
                     "opacity": 100,
                     "defaultFeatureType": "healthfacility",
+                    "timeAware": false,
                     "isDynamic": false,
                     "tags": []
                 }
@@ -214,6 +240,7 @@
                     "url": "data/projects/VMG/medical.json",
                     "typeUrl": "data/resourceTypes/osmfeatures.json",
                     "defaultFeatureType": "osm",
+                    "timeAware": false,
                     "isDynamic": false
                 },
                 {
@@ -224,6 +251,7 @@
                     "url": "data/projects/VMG/schools.json",
                     "typeUrl": "data/resourceTypes/osmfeatures.json",
                     "defaultFeatureType": "osm",
+                    "timeAware": false,
                     "isDynamic": false
                 },
                 {
@@ -234,10 +262,11 @@
                     "url": "data/projects/VMG/others.json",
                     "typeUrl": "data/resourceTypes/osmfeatures.json",
                     "defaultFeatureType": "osm",
+                    "timeAware": false,
                     "isDynamic": false
                 }
             ]
-        }, 
+        },
         {
             "id": "a887c780-422f-44c4-e291-154813452b81",
             "title": "News",
@@ -253,6 +282,7 @@
                     "url": "api/layers/newsfeed",
                     "typeUrl": "data/resourceTypes/news.json",
                     "defaultFeatureType": "news",
+                    "timeAware": false,
                     "isDynamic": true
                 }
             ]
