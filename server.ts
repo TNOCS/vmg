@@ -25,7 +25,7 @@ Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
 var newsLayerId = 'newsfeed';
 
 var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
-    port: 3003
+    port: 3456
 });
 
 cs.start(() => {
