@@ -29,16 +29,16 @@
     "baselayers": [{
         "title": "VMG",
         "subtitle": "Kidal, Mali",
-        "url": "http://localhost:3003/vmg_mali_kidal/{z}/{x}/{y}.png",
+        "url": "http://localhost:3456/vmg_mali_kidal/{z}/{x}/{y}.png",
         "isDefault": true,
         "minZoom": 0,
         "maxZoom": 22,
         "maxNativeZoom": 17,
-        "cesium_url": "http://localhost:3003/vmg_mali_kidal/",
+        "cesium_url": "http://localhost:3456/vmg_mali_kidal/",
         "cesium_tileUrl": "http://localhost:8000/tilesets/kidal-outer-dtm",
         "cesium_maptype": "openstreetmap",
         "attribution": "TNO Modelling, Simulation &amp; Gaming",
-        "preview": "http://localhost:3003/images/TNOblack.png"
+        "preview": "http://localhost:3456/images/TNOblack.png"
     }, {
         "title": "Positron",
         "isDefault": false,
