@@ -5,13 +5,14 @@ ADD . /home/node/app
 RUN chown -R node:node /home/node
 
 RUN npm install -g npm
-RUN npm install -g typescript@1.7.5 bower gulp node-gyp
+RUN npm install -g typescript@1.8.9 bower gulp node-gyp
 RUN apt-get update && apt-get install -y libkrb5-dev
 
 USER node
 ENV HOME /home/node
 
 EXPOSE 3003
+VOLUME ["/home/node/app"]
 WORKDIR /home/node/app
 RUN npm install
 WORKDIR /home/node/app/public

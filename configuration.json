@@ -6,5 +6,7 @@
     "keywords" : ["Mali", "Kidal", "Gao", "Bamako"],
     "ignorewords" : ["cookies", "walmart"],
     "ignoreurls" : ["opinion.inquirer.net", "financialexpress.com", "amazon.com"],
-    "updateIntervalSeconds" : 3600
+    "updateIntervalSeconds" : 3600,
+    "openCalaisApiKey": "aJMd2rNCzxVXZE7frwxmE0n4EAdE5q9q",
+    "alchemyFeedApiKey": "96e58cc237317628c4db63de3f73cadb00f35afc"
 }

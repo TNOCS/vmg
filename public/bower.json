@@ -1,5 +1,5 @@
 {
-  "name": "csWeb-example",
+  "name": "csCop",
   "version": "0.1.0",
   "authors": [
     "Erik Vullings",
@@ -10,10 +10,10 @@
     "node"
   ],
   "keywords": [
-    "map"
+    "map", "COP"
   ],
   "license": "MIT",
-  "description": "csWeb example project",
+  "description": "Common Operational Picture viewer with csWeb",
   "homepage": "http://github.com/TNOCS/csWeb",
   "private": true,
   "ignore": [
@@ -24,8 +24,8 @@
     "tests"
   ],
   "dependencies": {
-    "csweb": "~0.2.8",
-    "font-awesome": "~4.4.0",
+    "csweb": "^0.3.0",
+    "font-awesome": "~4.5.0",
     "angularUtils-pagination": "angular-utils-pagination#~0.9.2"
   }
 }

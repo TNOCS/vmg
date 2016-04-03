@@ -1,6 +1,6 @@
 {
   "name": "csWebExample",
-  "version": "0.2.15",
+  "version": "0.2.16-rc1",
   "description": "CommonSense web application",
   "main": "app.js",
   "start": "node server.js",
@@ -12,23 +12,16 @@
     "type": "git",
     "url": "https://github.com/TNOCS/csWeb"
   },
-  "keywords": [
-    "csweb",
-    "map", 
-    "leaflet",
-    "cesium"
-  ],
   "license": "MIT",
   "dependencies": {
-    "calais-entity-extractor": "github:rinzeb/calais-entity-extractor",
-    "csweb": "^0.2.15",
-    "csweb-tile": "^0.0.2",
-    "csweb-news": "^0.0.2",
+    "cors": "^2.7.1",
+    "csweb": "^0.3.0",
     "winston": "^2.1.0"
   },
   "devDependencies": {
     "chokidar": "^1.2.0",
     "coveralls": "^2.11.4",
+    "csweb-offline-search": "^0.1.0",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-angular-templatecache": "^1.8.0",
