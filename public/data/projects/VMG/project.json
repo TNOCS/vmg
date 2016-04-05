@@ -21,7 +21,7 @@
             "showMap": true,
             "showTimeline": false,
             "showLeftmenu": false,
-            "showLegend": true,
+            "showLegend": false,
             "showRightmenu": false,
             "showBackgroundImage": false,
             "widgets": [],
