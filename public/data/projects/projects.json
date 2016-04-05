@@ -27,7 +27,7 @@
         }
     },
     "baselayers": [{
-        "title": "VMG",
+        "title": "VMG - height",
         "subtitle": "Kidal, Mali",
         "url": "http://localhost:3456/vmg_mali_kidal/{z}/{x}/{y}.png",
         "isDefault": true,
@@ -39,6 +39,18 @@
         "cesium_tileUrl": "http://localhost:8000/tilesets/kidal-outer-dtm",
         "cesium_maptype": "openstreetmap",
         "attribution": "TNO Modelling, Simulation &amp; Gaming",
+        "preview": "http://localhost:3456/images/TNOblack.png"
+    }, {
+        "title": "VMG - no height",
+        "subtitle": "Kidal, Mali",
+        "url": "http://localhost:3456/vmg_mali_kidal/{z}/{x}/{y}.png",
+        "isDefault": false,
+        "minZoom": 0,
+        "maxZoom": 22,
+        "maxNativeZoom": 17,
+        "cesium_url": "http://localhost:3456/vmg_mali_kidal/",
+        "cesium_maptype": "openstreetmap",
+        "attribution": "No height - TNO Modelling, Simulation &amp; Gaming",
         "preview": "http://localhost:3456/images/TNOblack.png"
     }, {
         "title": "Positron",
@@ -117,6 +129,7 @@
         "maxZoom": 18,
         "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
         "cesium_url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "cesium_tileUrl": "//assets.agi.com/stk-terrain/world",
         "cesium_maptype": "arcgis",
         "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
         "preview": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/11/673/1051.png"
